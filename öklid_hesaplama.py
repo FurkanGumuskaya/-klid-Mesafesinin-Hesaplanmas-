@@ -1,13 +1,13 @@
 import math
 
-# İki nokta arasındaki Öklid mesafesini hesaplayan fonksiyon
+
 def oklid_mesafesi(x1, y1, x2, y2):
     q = x2 - x1
     r = y2 - y1
     p = math.sqrt(q**2 + r**2)
     return p
 
-# Kullanıcıdan noktaların koordinatlarını alma
+
 def kullanici_girdisi():
     while True:
         try:
@@ -19,7 +19,7 @@ def kullanici_girdisi():
         except ValueError:
             print("Geçersiz giriş! Lütfen sayı girin.")
 
-# Ana program döngüsü
+
 def ana_program():
     while True:
         x1, y1, x2, y2 = kullanici_girdisi()
@@ -30,6 +30,6 @@ def ana_program():
         if devam != 'evet':
             break
 
-# Programı çalıştır
+
 if __name__ == "__main__":
     ana_program()
